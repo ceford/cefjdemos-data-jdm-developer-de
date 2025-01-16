@@ -1,212 +1,268 @@
-<!-- Filename: XAMPP / Display title: XAMPP -->
+<!-- Filename: ### XAMPP
 
-## Einleitung
+#### Einführung
 
-XAMPP ist ein einfach zu installierendes Paket, das den
-Apache-Webserver, PHP, XDEBUG und die MySQL-Datenbank zusammenfasst.
-Damit kann man die notwendige Arbeitsumgebung für den Betrieb von
-Joomla! auf einem lokalen Computer einrichten. Die aktuelle Version von
-XAMPP ist auf der <a href="http://www.apachefriends.org/de/index.html"
-class="external text" target="_blank"
-rel="nofollow noreferrer noopener">XAMPP-Website</a> zu finden.
-Downloads sind für Linux, Windows, Mac OS X und Solaris verfügbar. Bitte
-das Paket für die jeweilige Systemumgebung herunterladen.
+XAMPP ist eine kostenlose und quelloffene plattformübergreifende Webserver-Lösung, die vor allem für die Entwicklung und das Testen von Webanwendungen genutzt wird. Dieses Paket besteht aus Apache, MariaDB, PHP und Perl und ist sowohl für Windows, Linux als auch für macOS verfügbar.
 
-*Wichtiger Hinweis zu XAMPP und Skype:* Apache und Skype verwenden beide
-den Port 80 für eingehende Verbindungen. Wenn Sie Skype verwenden, gehen
-Sie in das Fenster „Tools-Options-Advanced-Connection“ und deaktivieren
-Sie die Option „Use 80 and 443 as alternatives for incoming
-connections“. Wenn der Apache als Dienst gestartet wird, wird er Port 80
-benutzen, bevor Skype startet und es wird kein Problem auftreten.
-Deaktivieren der Option in Skype ist trotzdem zu empfehlen.
+#### Installation
 
-### Installation auf Windows
+1. **Download**: Besuchen Sie die offizielle Apache Friends-Website, um XAMPP herunterzuladen.
+2. **Installation**: Führen Sie das Installationsprogramm aus und folgen Sie den Anweisungen. Achten Sie darauf, die Komponenten auszuwählen, die Sie benötigen.
+3. **Starten**: Nach der Installation können Sie den XAMPP Control Panel verwenden, um die Dienste zu starten oder zu stoppen.
 
-Die Installation für Windows ist sehr einfach. Man kann das
-XAMPP-Installationsprogramm verwenden (z.B.
-„xampp-windows-x64-8.0.0-3-VS16-installer.exe“). Eine ausführliche
-Installationsanleitung für Windows ist
-<a href="https://www.apachefriends.org/de/download.html"
-class="external text" target="_blank"
-rel="nofollow noreferrer noopener">hier</a> verfügbar.
+#### Verwenden von XAMPP
 
-If you are on Windows XP or 2003 they are not supported by the main
-package but there are compatible versions of XAMPP for these platforms
-listed on the download page (but you will only be able to run PHP 5.4 or
-lower - and therefore will only be able to test Joomla 3.x and lower).
+- **Verwaltung von MySQL**: Über das Control Panel können Sie den MySQL-Dienst starten und phpMyAdmin verwenden, um Ihre Datenbanken zu verwalten.
+- **Verwaltung von PHP-Dateien**: Legen Sie Ihre PHP-Dateien im "htdocs"-Verzeichnis ab und rufen Sie sie über einen Webbrowser auf, um Ihre Anwendungen zu testen.
 
-For Windows, it is recommended to install XAMPP in "c:\xampp" (not in
-"c:\program files"). If you do this, your Joomla! (and any other local
-web site folders) will go into the folder "c:\xampp\htdocs". (By
-convention, all web content goes under the "htdocs" folder.)
+#### Vorteile
 
-If you have multiple http servers (like IIS) you can change the xampp
-listening port. In \apache\conf\httpd.conf, modify the line Listen 80 to
-Listen \[portnumber\] (ex: "Listen 8080").
+- **Einfach zu nutzen**: XAMPP ist benutzerfreundlich und erfordert keine umfassenden technischen Kenntnisse.
+- **Flexibilität**: Unterstützt mehrere Plattformen und bietet eine Reihe von Tools für die Entwicklung.
+- **Kostenlos**: Als Open-Source-Software fallen keine Kosten an.
 
-Joomla Community Magazine Tutorial
+#### Fazit
 
-You can find a detailed tutorial on installing XAMPP on Windows, along
-with the Joomla 4 Beta, the Joomla Patch Tester and Git in this <a
-href="https://magazine.joomla.org/all-issues/june-2020/github-installing-git"
-class="external text" target="_blank" rel="noreferrer noopener">Joomla
-Community Magazine article</a>.
+XAMPP ist eine ideale Lösung für Entwickler, die eine einfache Möglichkeit zur Einrichtung einer lokalen Entwicklungsumgebung suchen. Mit seinen umfangreichen Funktionen und der benutzerfreundlichen Oberfläche ist es ein unverzichtbares Tool für die Webentwicklung.
 
-### Installation on Linux
+#### Weitere Beiträge
 
-#### Install XAMPP
+- Wie man eine WordPress-Website mit XAMPP einrichtet
+- Tipps zur Sicherheit für Ihre XAMPP-Umgebung
+- Die häufigsten Fehler bei der Nutzung von XAMPP und deren Behebung
 
-Open Terminal and enter:
+#### Häufig gestellte Fragen
 
+- **Was bedeutet XAMPP?**: XAMPP steht für Cross-Platform (X), Apache (A), MariaDB (M), PHP (P), und Perl (P).
+- **Kann XAMPP für Produktionszwecke genutzt werden?**: XAMPP ist für Entwicklungszwecke gedacht und sollte nicht direkt in Produktionsumgebungen eingesetzt werden, da es standardmäßig nicht besonders sicher ist.
+
+Besuchen Sie die Apache Friends-Website für weitere Informationen und Beiträge zur Nutzung von XAMPP. / Display title: ### XAMPP
+
+#### Einführung
+
+XAMPP ist eine kostenlose und quelloffene plattformübergreifende Webserver-Lösung, die vor allem für die Entwicklung und das Testen von Webanwendungen genutzt wird. Dieses Paket besteht aus Apache, MariaDB, PHP und Perl und ist sowohl für Windows, Linux als auch für macOS verfügbar.
+
+#### Installation
+
+1. **Download**: Besuchen Sie die offizielle Apache Friends-Website, um XAMPP herunterzuladen.
+2. **Installation**: Führen Sie das Installationsprogramm aus und folgen Sie den Anweisungen. Achten Sie darauf, die Komponenten auszuwählen, die Sie benötigen.
+3. **Starten**: Nach der Installation können Sie den XAMPP Control Panel verwenden, um die Dienste zu starten oder zu stoppen.
+
+#### Verwenden von XAMPP
+
+- **Verwaltung von MySQL**: Über das Control Panel können Sie den MySQL-Dienst starten und phpMyAdmin verwenden, um Ihre Datenbanken zu verwalten.
+- **Verwaltung von PHP-Dateien**: Legen Sie Ihre PHP-Dateien im "htdocs"-Verzeichnis ab und rufen Sie sie über einen Webbrowser auf, um Ihre Anwendungen zu testen.
+
+#### Vorteile
+
+- **Einfach zu nutzen**: XAMPP ist benutzerfreundlich und erfordert keine umfassenden technischen Kenntnisse.
+- **Flexibilität**: Unterstützt mehrere Plattformen und bietet eine Reihe von Tools für die Entwicklung.
+- **Kostenlos**: Als Open-Source-Software fallen keine Kosten an.
+
+#### Fazit
+
+XAMPP ist eine ideale Lösung für Entwickler, die eine einfache Möglichkeit zur Einrichtung einer lokalen Entwicklungsumgebung suchen. Mit seinen umfangreichen Funktionen und der benutzerfreundlichen Oberfläche ist es ein unverzichtbares Tool für die Webentwicklung.
+
+#### Weitere Beiträge
+
+- Wie man eine WordPress-Website mit XAMPP einrichtet
+- Tipps zur Sicherheit für Ihre XAMPP-Umgebung
+- Die häufigsten Fehler bei der Nutzung von XAMPP und deren Behebung
+
+#### Häufig gestellte Fragen
+
+- **Was bedeutet XAMPP?**: XAMPP steht für Cross-Platform (X), Apache (A), MariaDB (M), PHP (P), und Perl (P).
+- **Kann XAMPP für Produktionszwecke genutzt werden?**: XAMPP ist für Entwicklungszwecke gedacht und sollte nicht direkt in Produktionsumgebungen eingesetzt werden, da es standardmäßig nicht besonders sicher ist.
+
+Besuchen Sie die Apache Friends-Website für weitere Informationen und Beiträge zur Nutzung von XAMPP. -->
+
+## Einführung
+
+XAMPP ist ein leicht zu installierendes Paket, das den Apache-Webserver, PHP, XDEBUG und die MySQL-Datenbank bündelt. Dies ermöglicht es Ihnen, die Umgebung zu schaffen, die Sie benötigen, um Joomla! auf Ihrem lokalen Rechner auszuführen. Die neueste Version von XAMPP ist auf der <a href="http://www.apachefriends.org/en/index.html" class="external text" target="_blank" rel="nofollow noreferrer noopener">XAMPP-Website</a> verfügbar. Downloads sind für Linux, Windows, Mac OS X und Solaris verfügbar. Laden Sie das Paket für Ihre Plattform herunter.
+
+*Wichtiger Hinweis zu XAMPP und Skype:* Apache und Skype verwenden beide Port 80 als Alternative für eingehende Verbindungen. Wenn Sie Skype verwenden, gehen Sie in das Menü Extras-Optionen-Erweitert-Verbindung und deaktivieren Sie die Option "80 und 443 als Alternativen für eingehende Verbindungen verwenden". Wenn Apache als Dienst gestartet wird, wird es Port 80 vor Skype verwenden, und Sie werden kein Problem feststellen. Aber um sicherzugehen, deaktivieren Sie die Option in Skype.
+
+### Installation unter Windows
+
+Die Installation für Windows ist sehr einfach. Sie können das XAMPP-Installationsprogramm verwenden (zum Beispiel „xampp-windows-x64-7.4.4-0-VC15-installer.exe“). Detaillierte Installationsanweisungen für Windows sind <a href="https://www.apachefriends.org/download.html" class="external text" target="_blank" rel="nofollow noreferrer noopener">hier</a> verfügbar.
+
+Wenn Sie Windows XP oder 2003 verwenden, werden diese vom Hauptpaket nicht unterstützt. Es gibt jedoch kompatible Versionen von XAMPP für diese Plattformen, die auf der Download-Seite aufgeführt sind (aber Sie werden nur PHP 5.4 oder niedriger ausführen können - und daher nur Joomla 3.x und niedriger testen können).
+
+Für Windows wird empfohlen, XAMPP in "c:\xampp" zu installieren (nicht in "c:\program files"). Wenn Sie dies tun, wird Ihr Joomla! (und alle anderen lokalen Website-Ordner) im Ordner "c:\xampp\htdocs" abgelegt. (Üblicherweise geht sämtlicher Webinhalt in den "htdocs"-Ordner.)
+
+Wenn Sie mehrere HTTP-Server (wie IIS) haben, können Sie den Hörport von XAMPP ändern. In \apache\conf\httpd.conf ändern Sie die Zeile Listen 80 in Listen \[portnummer\] (z.B.: "Listen 8080").
+
+Joomla Community Magazine Anleitung
+
+Sie können ein ausführliches Tutorial zur Installation von XAMPP auf Windows zusammen mit der Joomla 4 Beta, dem Joomla Patch Tester und Git in diesem <a href="https://magazine.joomla.org/all-issues/june-2020/github-installing-git" class="external text" target="_blank" rel="noreferrer noopener">Beitrag des Joomla Community Magazins</a> finden.
+
+### Installation auf Linux
+
+#### XAMPP installieren
+
+Öffnen Sie das Terminal und geben Sie ein:
+
+```bash
     sudo tar xvfz xampp-linux-1.7.7.tar.gz -C /opt
+```
 
-(replace *xampp-linux-1.7.7.tar.gz* with the version of xammp you
-downloaded). It has been reported that the MYSQL database of xampp 1.7.4
-does not work with Joomla 1.5.22
+(ersetzen Sie *xampp-linux-1.7.7.tar.gz* mit der Version von XAMPP, die Sie heruntergeladen haben). Es wurde berichtet, dass die MYSQL-Datenbank von XAMPP 1.7.4 nicht mit Joomla 1.5.22 funktioniert.
 
-This installs ... Apache2, mysql and php5 as well as an ftp server.
+Dies installiert ... Apache2, mysql und php5 sowie einen FTP-Server.
 
+```bash
     sudo /opt/lampp/lampp start
+```
 
-and
+Bitte übersetze den folgenden Markdown-Text von Englisch nach Deutsch. Bitte verwende das Wort "Beiträge" anstelle von "Artikel".
 
+```bash
     sudo /opt/lampp/lampp stop
+```
 
-starts/stops all the services
+startet/stoppt alle Dienste
 
-#### Test your XAMPP localhost server
+#### Testen Sie Ihren XAMPP-Localhost-Server
 
-Open your Browser and point it to
+Öffnen Sie Ihren Browser und richten Sie ihn auf
 
+```bash
     http://localhost
+```
 
-The index.php will redirect to
+Die index.php wird weiterleiten zu
 
+```bash
     http://localhost/xampp
+```
 
-There you will find instructions on how to change default
-usernames/passwords. On a PC that does not serve files to the Internet
-or LAN then changing the defaults is a personal decision.
+Dort finden Sie Anleitungen zum Ändern von Standard-Benutzernamen/Passwörtern. Auf einem PC, der keine Dateien an das Internet oder LAN bereitstellt, ist das Ändern der Standardwerte eine persönliche Entscheidung.
 
-#### Get Joomla
+#### Joomla holen
 
-Download the latest Joomla instalation zip
+Laden Sie die neueste Joomla-Installations-Zip herunter
 <a href="https://www.joomla.org/download.html"
 class="external autonumber" target="_blank"
 rel="noreferrer noopener">[1]</a>
 
-Unzip to your hard drive
+Entpacken Sie auf Ihre Festplatte
 
-Connect to localhost with an FTP client Default
+Verbinden Sie sich mit einem FTP-Client mit localhost Standardmäßig.
 
+```
     nobody
     lampp
+```
 
-Create a folder for your Joomla on the localhost server
+Erstellen Sie einen Ordner für Ihr Joomla auf dem lokalen Server.
 
-FTP the unpacked Joomla installation files to the newly created Joomla
-folder.
+FTP die entpackten Joomla-Installationsdateien in den neu erstellten Joomla-Ordner.
 
-**Important:**
+**Wichtig:**
 
-- The xammp installation sets the correct Ownership of the files and
-  permissions.
-- Using the **CHOWN command** will **cause Ownership problems with
-  xampp**.
-- **Using nautilus** to manipulate folders/files on localhost will
-  **cause Ownership problems with xampp**.
+- Die xampp-Installation setzt den korrekten Besitz der Dateien und Berechtigungen.
+- Die Verwendung des **CHOWN-Befehls** wird **Besitzprobleme mit xampp verursachen**.
+- Die **Verwendung von nautilus**, um Ordner/Dateien auf localhost zu manipulieren, wird **Besitzprobleme mit xampp verursachen**.
 
-**Database info**
+**Datenbankinformationen**
 
-Host
+- Host: localhost
+- Standard-Datenbankname: test
+- Standard-Datenbankbenutzer: root
+- Es gibt **kein** Standard-Passwort.
 
-    localhost
+Das Administrator-Passwort ist Ihre Wahl.
 
-Default Database name
+Die Installation von Beispieldaten wird dem unerfahrenen Benutzer empfohlen.
 
-    test
+Nach der Installation löschen Sie das Installationsverzeichnis und richten Sie Ihren Browser auf:
 
-Default Database user
-
-    root
-
-There is **no** default Password.
-
-Administrator password is your choice.
-
-Installing Sample Data is recommended for the novice user.
-
-After installation delete the installation directory and point your
-Browser to:
-
+```
     http://localhost/yournewjoomlafolder
+```
 
-or
+Entweder
 
+```
     http://localhost/yournewjoomlafolder/administrator
+```
 
-#### Creating a link in the Ubuntu menu
+#### Erstellen eines Links im Ubuntu-Menü
 
-**To create a GUI for xammp connected to your Ubuntu menu**
+**Um eine GUI für XAMPP zu erstellen, die mit Ihrem Ubuntu-Menü verbunden ist**
 
-Open up the Terminal and type
+Öffnen Sie das Terminal und tippen Sie ein
 
+```bash
     sudo gedit /usr/share/applications/xampp-control-panel.desktop
+```
 
-Then copy the following into the gedit and save.
+Bitte übersetzen Sie den folgenden Markdown-Text aus dem Englischen ins Deutsche. Bitte verwenden Sie das Wort "Beiträge" anstelle von "Artikel".: 
+Kopieren Sie dann das Folgende in den gedit und speichern Sie es.
 
-    [Desktop Entry]
-    Encoding=UTF-8
-    Name=XAMPP Control Panel
-    Comment=Start and Stop XAMPP
-    Exec=gksudo "python /opt/lampp/share/xampp-control-panel/xampp-control-panel.py"
-    Icon=/usr/share/icons/Tango/scalable/devices/network-wired.svg
-    Terminal=false
-    Type=Application
-    Categories=GNOME;Application;Network;
-    StartupNotify=true
+```bash
+[Desktop Entry]
+Encoding=UTF-8
+Name=XAMPP Control Panel
+Comment=Start and Stop XAMPP
+Exec=gksudo "python /opt/lampp/share/xampp-control-panel/xampp-control-panel.py"
+Icon=/usr/share/icons/Tango/scalable/devices/network-wired.svg
+Terminal=false
+Type=Application
+Categories=GNOME;Application;Network;
+StartupNotify=true
+```
 
-If the control panel fails to launch, try running the Exec command
-directly in the terminal:
+```
+Wenn das Kontrollzentrum nicht startet, versuchen Sie den Exec-Befehl
+direkt im Terminal auszuführen:
+```
 
+```bash
     gksudo "python /opt/lampp/share/xampp-control-panel/xampp-control-panel.py"
+```
 
-If you receive the error:
+Wenn Sie den Fehler erhalten:
 
+```bash
     Error importing pygtk2 and pygtk2-libglade
+```
 
-Install the missing libraries:
+Installiere die fehlenden Bibliotheken:
 
+```bash
     sudo apt-get install python-glade2
+```
 
-#### XDebug PHP debugger
+#### XDebug PHP-Debugger
 
-The XAMPP package for Linux does not includes the XDebug PHP debugger.
-To install XDebug on Debian or Ubuntu:
+Das XAMPP-Paket für Linux enthält den PHP-Debugger XDebug nicht.
+Um XDebug auf Debian oder Ubuntu zu installieren:
 
-\- Install the *build-essential* package:
-
+- Installieren Sie das Paket *build-essential*:```bash
     sudo apt-get update
     sudo apt-get install build-essential
     sudo apt-get install autoconf
+```
 
-\- Download the
+- Laden Sie das
 <a href="http://www.apachefriends.org/en/xampp-linux.html"
 class="external text" target="_blank"
-rel="nofollow noreferrer noopener">development package</a> for your
-version of XAMPP and extract it over your existing installation:
-
+rel="nofollow noreferrer noopener">Entwicklungspaket</a> für Ihre
+Version von XAMPP herunter und entpacken Sie es über Ihre bestehende Installation:```bash
     sudo tar xvfz xampp-linux-devel-1.7.7.tar.gz -C /opt 
+```
 
-\- Build XDebug:
-
+- XDebug erstellen:```bash
     wget http://xdebug.org/files/xdebug-2.1.3.tgz
     tar xzf xdebug-2.1.3.tgz
     cd xdebug-2.1.3/
     /opt/lampp/bin/phpize
+```
 
-After this you will have following output on your console…
+Nach diesem Vorgang wird die folgende Ausgabe auf Ihrer Konsole angezeigt…
 
+```bash
     Configuring for:
     PHP Api Version:         20090626
     Zend Module Api No:      20090626
@@ -215,121 +271,108 @@ After this you will have following output on your console…
     ./configure --with-php-config=/opt/lampp/bin/php-config
     make
     sudo make install 
+```
 
-Then the output will be this.. please monitor the directory specified.
+Dann wird die Ausgabe so sein... bitte überwachen Sie das angegebene Verzeichnis.
 
+```bash
     Installing shared extensions:     /opt/lampp/lib/php/extensions/no-debug-non-zts-20090626/ 
+```
 
-Create a folder in your temp folder that will holds the data file
-generated by XDebug:
+Erstellen Sie einen Ordner in Ihrem Temp-Ordner, der die von XDebug generierte Datendatei enthält.
 
+```bash
     sudo mkdir /opt/lampp/tmp/xdebug
     sudo chmod a+rwx -R /opt/lampp/tmp/xdebug 
+```
 
-Alternative installations:
+Alternative Installationen:
 
-Install using PHP extensions community library (PECL) bundled with
-xampp:
+Installieren Sie über die PHP-Erweiterungen der Community-Bibliothek (PECL), die mit XAMPP gebündelt sind:
 
+```bash
     sudo /opt/lampp/bin/pecl install xdebug
+```
 
-On Ubuntu/Debian you can install using:
+Auf Ubuntu/Debian können Sie mit folgendem Befehl installieren:
 
+```bash
     apt-get install php5-xdebug 
+```
 
-(warning: this will also install Apache and PHP from apt repositories).
+(Achtung: Dies wird auch Apache und PHP aus den apt-Repositories installieren).
 
-**Warning for 64bit users**
+**Warnung für 64-Bit-Nutzer**
 
-When compiling XDebug or installing via apt-get, you will receive an
-error when (re)starting xampp:
+Beim Kompilieren von XDebug oder der Installation über apt-get erhalten Sie einen Fehler beim (Neu)starten von xampp:
 
+```bash
     /opt/lampp/lib/php/extensions/no-debug-non-zts-20090626/xdebug.so: wrong ELF class: ELFCLASS64
+```
 
-This is because xampp runs 32bit but XDebug is 64bit. To overcome this
-problem, either make xdebug.so on a 32bit machine or download it from:
+Dies liegt daran, dass XAMPP 32-Bit läuft, aber XDebug 64-Bit ist. Um dieses Problem zu umgehen, können Sie entweder xdebug.so auf einer 32-Bit-Maschine erstellen oder es von folgendem Link herunterladen:
 
+```bash
     http://code.activestate.com/komodo/remotedebugging/
+```
 
-Download the file: "PHP Remote Debugging Client" for "Linux (x86)"
-Extract the content of the file on your computer, this compressed file
-contains several folders with version numbers ex: 4.4, 5.0, 5.1 ... 5.3
-and so forth, get in the folder with the higher version number or the
-one that works for you, then manually copy the file "xdebug.so" to the
-following location, overwrite if needed
+Laden Sie die Datei herunter: "PHP Remote Debugging Client" für "Linux (x86)"  
+Extrahieren Sie den Inhalt der Datei auf Ihrem Computer. Diese komprimierte Datei enthält mehrere Ordner mit Versionsnummern, z.B.: 4.4, 5.0, 5.1 ... 5.3 und so weiter. Wechseln Sie in den Ordner mit der höchsten Versionsnummer oder in den, der für Sie funktioniert, und kopieren Sie dann manuell die Datei "xdebug.so" in den folgenden Ort, überschreiben Sie bei Bedarf.
 
+```bash
     /opt/lampp/lib/php/extensions/no-debug-non-zts-20090626/
+```
 
-Remember this location could be different on your computer
+Denken Sie daran, dass dieser Speicherort auf Ihrem Computer unterschiedlich sein könnte.
 
-### Installation on Mac OS X
+### Installation auf Mac OS X
 
-Mac OS X actually includes an Apache server out-of-the-box, but most
-developers will prefer to use the integrated tools and configurability
-provided by XAMPP.
+Mac OS X enthält tatsächlich einen Apache-Server von Haus aus, aber die meisten Entwickler werden es vorziehen, die integrierten Tools und die Konfigurierbarkeit von XAMPP zu nutzen.
 
-As with most programs on Mac, installation is a breeze. Visit
-<a href="https://www.apachefriends.org/en/download.html"
-class="external text" target="_blank"
-rel="nofollow noreferrer noopener">Apache Friends - Mac OS X</a> for the
-universal binary download.
+Wie bei den meisten Programmen auf dem Mac ist die Installation ein Kinderspiel. Besuchen Sie <a href="https://www.apachefriends.org/en/download.html" class="external text" target="_blank" rel="nofollow noreferrer noopener">Apache Friends - Mac OS X</a> für den universellen Binärdownload.
 
-Once the file has finished downloading, just open the disk image, and
-drag the XAMPP folder to the "Applications" folder alias.
+Sobald der Download der Datei abgeschlossen ist, öffnen Sie einfach das Disk-Image und ziehen Sie den XAMPP-Ordner zum Alias-Ordner "Programme".
 
-To start the server, open "XAMPP Control.app" and press the start button
-next to Apache.
+Um den Server zu starten, öffnen Sie "XAMPP Control.app" und drücken Sie die Starttaste neben Apache.
 
-##### A Little Troubleshooting
+##### Ein wenig Fehlersuche
 
-Many Mac users have a little difficulty at this stage when trying to set
-up another instance of Apache on their machine. If you cannot start
-XAMPP's Apache, you have two options:  
-**You can change the listening port of XAMPP.** In
-\Applications\XAMPP\xamppfiles\etc\httpd.conf, modify the line that
-says, "Listen 80" to Listen \[portNumber\]. E.g.:
+Viele Mac-Benutzer haben in diesem Stadium einige Schwierigkeiten, wenn sie versuchen, eine weitere Instanz von Apache auf ihrem Gerät einzurichten. Wenn Sie XAMPPs Apache nicht starten können, haben Sie zwei Möglichkeiten:  
+**Sie können den Abhörport von XAMPP ändern.** In \Applications\XAMPP\xamppfiles\etc\httpd.conf ändern Sie die Zeile, die "Listen 80" sagt, auf Listen \[portNumber\]. Zum Beispiel:
 
+```bash
     Listen 8080
+```
 
-**You can change the listening port of the pre-installed Apache
-server.** In finder, go to "/etc" (CMD+SHIFT+G); from here you will be
-able to navigate through the normally hidden Apache files. Find the
-folder labeled Apache2, and edit the "http.conf" file. Modify the line
-that says, "Listen 80" to Listen \[portNumber\]. E.g.:
+**Sie können den Abhörport des vorinstallierten Apache-Servers ändern.** Öffnen Sie im Finder das Verzeichnis "/etc" (CMD+SHIFT+G); von hier aus können Sie durch die normalerweise versteckten Apache-Dateien navigieren. Suchen Sie den Ordner mit der Bezeichnung Apache2 und bearbeiten Sie die Datei "http.conf". Ändern Sie die Zeile, die "Listen 80" sagt, zu Listen \[portNumber\]. Zum Beispiel:
 
+```bash
     Listen 8080
+```
 
-*Note: If you choose to change the port of the pre-installed Apache
-server, you may need to restart your computer for changes to take
-effect. You will also have to authenticate as an administrator to change
-these files.*
+*Hinweis: Wenn Sie den Port des vorinstallierten Apache-Servers ändern, müssen Sie möglicherweise Ihren Computer neu starten, damit die Änderungen wirksam werden. Sie müssen sich auch als Administrator authentifizieren, um diese Dateien zu ändern.*
 
-### Test XAMPP Installation
+### XAMPP-Installation testen
 
-Once XAMPP is installed and you have started the Apache service with the
-XAMPP Control Panel tool, you can test it by opening your browser and
-navigating to
-"<a href="http://localhost" class="external free" target="_blank"
-rel="nofollow noreferrer noopener">http://localhost</a>". You should see
-the XAMPP welcome screen similar to the one below.
+Sobald XAMPP installiert ist und Sie den Apache-Dienst mit dem XAMPP Control Panel Tool gestartet haben, können Sie ihn testen, indem Sie Ihren Browser öffnen und zu "<a href="http://localhost" class="external free" target="_blank" rel="nofollow noreferrer noopener">http://localhost</a>" navigieren. Sie sollten den XAMPP-Willkommensbildschirm ähnlich dem untenstehenden sehen.
 
 <img
 src="https://docs.joomla.org/images/thumb/f/fc/Phpinfo_on_xampp.png/800px-Phpinfo_on_xampp.png"
 decoding="async"
 srcset="https://docs.joomla.org/images/thumb/f/fc/Phpinfo_on_xampp.png/1200px-Phpinfo_on_xampp.png 1.5x, https://docs.joomla.org/images/f/fc/Phpinfo_on_xampp.png 2x"
 data-file-width="1498" data-file-height="883" width="800" height="472"
-alt="Phpinfo on xampp.png" />
+alt="Phpinfo auf xampp.png" />
 
-Select the link called "phpinfo()" in the top menu. This will display a
-long screen of information about the PHP configuration, as shown below.
+Wählen Sie den Link "phpinfo()" im oberen Menü. Dies zeigt einen langen Bildschirm mit Informationen über die PHP-Konfiguration an, wie unten gezeigt.
 
 <img
 src="https://docs.joomla.org/images/thumb/d/db/Phpinfo.png/800px-Phpinfo.png"
 decoding="async"
 srcset="https://docs.joomla.org/images/thumb/d/db/Phpinfo.png/1200px-Phpinfo.png 1.5x, https://docs.joomla.org/images/d/db/Phpinfo.png 2x"
-data-file-width="1432" data-file-height="1282" width="800" height="716"
+daten-dateibreite="1432" daten-dateihöhe="1282" breite="800" höhe="716"
 alt="Phpinfo.png" />
 
-At this point, XAMPP is installed successfully. Notice the "Loaded
-Configuration File". We will be editing this file in the next section to
-configure XDebug.
+Zu diesem Zeitpunkt ist XAMPP erfolgreich installiert. Beachten Sie die "Geladene Konfigurationsdatei". Wir werden diese Datei im nächsten Abschnitt bearbeiten, um XDebug zu konfigurieren.
+
+*Übersetzt von openai.com*
+

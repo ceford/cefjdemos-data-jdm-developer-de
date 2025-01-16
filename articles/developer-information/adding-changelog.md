@@ -1,42 +1,42 @@
-<!-- Filename: Adding_changelog_to_your_manifest_file / Display title: Changelog zur Manifest-Datei hinzufügen -->
+<!-- Filename: Adding_changelog_to_your_manifest_file / Display title: Hinzufügen eines Änderungsprotokolls -->
 
-Seit Joomla 4.0 können Extension-Entwickler die Fähigkeit von Joomla nutzen, eine Changelog-Datei zu lesen und eine visuelle Darstellung des Changelogs zu geben. Wenn eine bestimmte Version nicht im Changelog gefunden wird, wird die Schaltfläche Changelog nicht angezeigt.
+Seit Joomla 4.0 können Erweiterungsentwickler die Fähigkeit von Joomla nutzen, eine Änderungsdatei zu lesen und eine visuelle Darstellung der Änderungen zu geben. Wenn eine bestimmte Version nicht in der Änderungsdatei gefunden wird, wird der Änderungsprotokoll-Button nicht angezeigt.
 
-Die Änderungen in einer Version werden so dargestellt:
+Die Änderungen in einem Release werden in dieser Weise präsentiert:
 
-<img alt="Changelog modal" src="https://docs.joomla.org/images/thumb/7/7a/Changelog_modal-en.png/700px-Changelog_modal-en.png" decoding="async" width="700" height="461" srcset="https://docs.joomla.org/images/thumb/7/7a/Changelog_modal-en.png/1050px-Changelog_modal-en.png 1.5x, https://docs.joomla.org/images/thumb/7/7a/Changelog_modal-en.png/1400px-Changelog_modal-en.png 2x" data-file-width="1618" data-file-height="1066">
+![changelog modal view](../../../en/images/developer-information/adding-changelog-example-1.png)
 
-Das Changelog wird an zwei verschiedenen Stellen verwendet.
+Das Änderungsprotokoll wird an zwei verschiedenen Orten verwendet.
 
-## Update Ansicht
+## Ansicht aktualisieren
 
-Das Installationsprogramm zeigt das Changelog der Version an, die installiert werden kann, falls verfügbar.
+Der Installationsprogramm zeigt das Änderungsprotokoll der Version an, die installiert werden kann, falls verfügbar.
 
-<img alt="Changelog button on the Update View" src="https://docs.joomla.org/images/thumb/7/79/Update_view_changelog_button-en.png/700px-Update_view_changelog_button-en.png" decoding="async" width="700" height="152" srcset="https://docs.joomla.org/images/thumb/7/79/Update_view_changelog_button-en.png/1050px-Update_view_changelog_button-en.png 1.5x, https://docs.joomla.org/images/7/79/Update_view_changelog_button-en.png 2x" data-file-width="1282" data-file-height="278">
+![changelog installer view](../../../en/images/developer-information/adding-changelog-update-view.png)
 
-Durch klicken auf die AAAA-Schaltfläche wird das Änderungsprotokoll der neu verfügbaren Version angezeigt.
+Durch Klicken auf die Schaltfläche Changelog wird das Änderungsprotokoll der neuen verfügbaren Version angezeigt.
 
-## Manager-Ansicht
+## Ansicht verwalten
 
-Der Erweiterungs-Manager zeigt das Änderungsprotokoll der aktuell installierten Erweiterung an, falls verfügbar.
+Der Erweiterungsmanager zeigt das Änderungsprotokoll der derzeit installierten Erweiterung an, falls verfügbar.
 
-<img alt="Version number is a link to the changelog modal" src="https://docs.joomla.org/images/thumb/4/4b/Manage_view_changelog_link-en.png/700px-Manage_view_changelog_link-en.png" decoding="async" width="700" height="81" srcset="https://docs.joomla.org/images/thumb/4/4b/Manage_view_changelog_link-en.png/1050px-Manage_view_changelog_link-en.png 1.5x, https://docs.joomla.org/images/4/4b/Manage_view_changelog_link-en.png 2x" data-file-width="1274" data-file-height="148">
+![changelog installer view](../../../en/images/developer-information/adding-changelog-extension-view.png)
 
-Durch klicken auf die Versionsnummer wird das Änderungsprotokoll der aktuell installierten Version angezeigt.
+Durch Klicken auf die Versionsnummer hier wird das Änderungsprotokoll der aktuell installierten Version angezeigt.
 
-## Ein Changelog-URL-Tag in Manifest-Dateien einfügen
+## Tag changelogurl zu den Manifestdateien hinzufügen
 
-Der erste Schritt besteht darin, Ihre Manifestdateien zu aktualisieren, die Joomla mitteilen, wo die Changelog-Details zu finden sind. Fügen Sie Ihren Manifest-XML-Dateien den folgenden Node hinzu:
+Der erste Schritt besteht darin, Ihre Manifestdateien zu aktualisieren, die Joomla mitteilen, wo sich die Changelog-Details befinden. Fügen Sie den folgenden Knoten zu Ihren Manifest-XML-Dateien hinzu:
 
 ```
 <changelogurl>https://example.com/updates/changelog.xml</changelogurl>
 ```
 
-Bitte beachten: Die im changelogurl-Tag eingetragene URL darf davor und danach keine Leerzeichen oder Zeilenumbrüche enthalten. Siehe Code-Beispiele.
+Bitte beachten: Die URL im changelogurl-Tag darf keine Leerzeichen oder Zeilenumbrüche davor oder danach haben. Siehe Codebeispiele.
 
-### Update-Server Manifest-Datei
+### Servermanifest aktualisieren
 
-Dieses Beispiel zeigt eine Manifestdatei für den Update-Server, die Joomla über ein Update einer Komponente namens "com_lists" informiert. Dadurch sehen Sie in der Update-Ansicht die Schaltfläche Changelog.
+Sehen Sie sich dieses Beispiel für eine Aktualisierungs-Server-Manifestdatei an, die Joomla über ein Update einer Komponente namens "com_lists" informiert. So werden Sie die Changelog-Schaltfläche in der Aktualisierungsansicht sehen.
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -63,35 +63,36 @@ Dieses Beispiel zeigt eine Manifestdatei für den Update-Server, die Joomla übe
 </updates>
 ```
 
-### Erweiterung-Manifest-Datei
+### Erweiterungsmanifest
 
-Fügen Sie zusätzlich das Changelog-URL-Tag zur „Extension Manifest XML“ hinzu. Somit wird die Erweiterungsversion mit den Änderungsprotokollen in der Manager-Ansicht verknüpft.
+Fügen Sie zusätzlich das changelogurl-Tag zur Erweiterungsmanifest-XML hinzu. Somit wird die Erweiterungsversion in der Verwaltungsansicht mit den Änderungsprotokollen verlinkt.
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="component" method="upgrade">
-	<name>COM_LISTS</name>
+    <name>COM_LISTS</name>
 
 ... Other stuff ...
 
-	<changelogurl>https://example.com/updates/changelog.xml</changelogurl>
+    <changelogurl>https://example.com/updates/changelog.xml</changelogurl>
 
-	<updateservers>
+    <updateservers>
         <server type="extension" name="My Extension's Updates">https://example.com/lists-updates.xml</server>
-	</updateservers>
+    </updateservers>
 </extension>
 ```
-## Changelog-Datei erstellen
 
-Die Changelog-Datei muss die folgenden 3 Nodes enthalten:
+## Änderungsprotokolldatei erstellen
 
-* element
-* type
-* version
+Die Änderungsprotokolldatei muss die folgenden 3 Knoten haben:
 
-Diese Informationen werden verwendet, um das richtige Changelog für eine bestimmte Erweiterung zu identifizieren.
+* Element
+* Typ
+* Version
 
-Ein version-Node innerhalb eines changelog-Node ist immer erforderlich. Andernfalls erhalten Sie eine Fehlermeldung wie SyntaxError: JSON.parse: unerwartetes Zeichen in Zeile 1, Spalte 1 der JSON-Daten.
+Diese Informationen werden verwendet, um das korrekte Änderungsprotokoll für eine bestimmte Erweiterung zu identifizieren.
+
+Ein Versionsknoten innerhalb eines beliebigen Changelog-Knotens ist immer obligatorisch. Ansonsten wird eine Fehlermeldung wie SyntaxError: JSON.parse: unerwartetes Zeichen in Zeile 1 Spalte 1 der JSON-Daten angezeigt.
 
 ```
 <element>com_lists</element>
@@ -99,19 +100,19 @@ Ein version-Node innerhalb eines changelog-Node ist immer erforderlich. Andernfa
 <version>4.0.0</version>
 ```
 
-Weiter wird das Changelog mit einer oder mehreren Änderungsarten gefüllt. Die folgenden Änderungs-Typen werden unterstützt:
+Weiterhin wird das Changelog mit einem oder mehreren Änderungstypen gefüllt. Die folgenden Änderungstypen werden unterstützt:
 
-* security: Etwaige Sicherheitsprobleme, die behoben wurden
-* fix: Fehler, die behoben wurden
-* language: Dieser gilt für Sprachänderungen
-* addition: Neu hinzugefügte Features
-* change: Andere Änderungen
-* remove: Aus der Erweiterung entfernte Features
-* note: Ergänzende Informationen für den Benutzer
+* Sicherheit: Alle Sicherheitsprobleme, die behoben wurden
+* Fehlerbehebung: Alle behobenen Fehler
+* Sprache: Dies betrifft Sprachänderungen
+* Ergänzung: Alle neuen Funktionen, die hinzugefügt wurden
+* Änderung: Alle Änderungen
+* Entfernen: Alle entfernten Funktionen
+* Hinweis: Zusätzliche Informationen, um den Benutzer zu informieren
 
-Jeder Node kann mehrfach verwendet werden, falls notwendig.
+Jeder Knoten kann so oft wie nötig wiederholt werden.
 
-Das Format des Texts kann reiner Text oder HTML sein. Bei HTML muss der Text, wie im Beispiel gezeigt, in CDATA-Tags eingeschlossen sein.
+Der Format des Textes kann einfacher Text oder HTML sein, aber im Fall von HTML muss er in CDATA-Tags eingeschlossen werden, wie im Beispiel gezeigt.
 
 ```
 <changelogs>
@@ -149,19 +150,21 @@ Das Format des Texts kann reiner Text oder HTML sein. Bei HTML muss der Text, wi
         </note>
 </changelog>
 <changelog>
-	<element>com_lists</element>
-	<type>component</type>
-	<version>0.0.2</version>
-	<security>
-		<item>Big issue</item>
-	</security>
+    <element>com_lists</element>
+    <type>component</type>
+    <version>0.0.2</version>
+    <security>
+        <item>Big issue</item>
+    </security>
 </changelog>
 </changelogs>
 ```
 
-Diese Datei enthält 2 Changelogs:
+Diese Datei enthält 2 Änderungsprotokolle:
 
-* Version 0.0.2 (zum Testen der Manager-Ansicht)
-* Version 4.0.0 (zum Testen der Update-Ansicht)
+* Version 0.0.2 (zum Testen der Verwaltungsansicht)
+* Version 4.0.0 (zum Testen der Aktualisierungsansicht)
 
-Ein Changelog kann beliebig viele Versionen enthalten.
+Ein Änderungsprotokoll kann so viele Versionen haben, wie benötigt.
+
+*Übersetzt von openai.com*

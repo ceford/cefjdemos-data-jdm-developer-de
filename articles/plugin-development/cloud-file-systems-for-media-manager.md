@@ -1,7 +1,7 @@
-<!-- Filename: J4.x:Cloud_File_Systems_for_Media_Manager / Display title: Cloud-Dateisysteme für den Medien-Manager -->
+<!-- Filename: J4.x:Cloud_File_Systems_for_Media_Manager / Display title: Cloud-Dateisysteme für Media-Manager -->
 
 <span id="main-portal-heading">GSoC 2017
-Cloud-Dateisysteme für den Medien-Manager
+Cloud-Dateisysteme für den Medienmanager
 Dokumentation</span> [<img
 src="https://docs.joomla.org/images/thumb/7/7d/Gsoc2016.png/75px-Gsoc2016.png"
 decoding="async"
@@ -12,97 +12,69 @@ Joomla!  4.x
 
 ## Einführung
 
-**Joomla! 4.x** wird standardmäßig mit Cloud-Dateisystemen für den
-**Medien-Manager** ausgestattet. Mit der vorherigen API war das
-Erstellen von benutzerdefinierten Dateisystemen eine schwierige Aufgabe.
-Dank der neuen API ist es jetzt einfach, ein benutzerdefiniertes
-Dateisystem zu erstellen. Wenn ein Cloud-Dienst mit dem neuen
-Medien-Manager genutzt werden soll, ist es ratsam, **OAuth2.0** zu
-verwenden.
+**Joomla! 4.x** wird standardmäßig mit Cloud-Dateisystemen für den **Medien-Manager** geliefert. Mit der vorherigen API war das Erstellen benutzerdefinierter Dateisysteme eine schwierige Aufgabe. Dank der neuen API ist es nun einfach, ein benutzerdefiniertes Dateisystem zu erstellen. Wenn Sie einen Cloud-Dienst mit dem neuen Medien-Manager verwenden möchten, wird die Verwendung von **OAuth2.0** empfohlen.
 
-Dieses Dokument beschreibt die wichtigsten Schritte zur Erstellung eines
-eigenen **Dateisystem-Plugins** zur Erweiterung des **Medien-Managers**.
-Es ist wichtig, dass das Grundwissen vorhanden ist, wie man ein Plugin
-für Joomla entwickelt. [Dieses
-Tutorial](https://docs.joomla.org/J3.x:Creating_a_Plugin_for_Joomla "Special:MyLanguage/J3.x:Creating a Plugin for Joomla")
-sollte dabei helfen.
+Dieses Dokument führt Sie durch wichtige Schritte zur Erstellung Ihres eigenen **Dateisystem-Plugins**, um den **Media-Manager** zu erweitern. Bevor Sie fortfahren, stellen Sie bitte sicher, dass Sie über grundlegende Kenntnisse zur Entwicklung eines Plugins für Joomla verfügen. [Dieses Tutorial](https://docs.joomla.org/J3.x:Creating_a_Plugin_for_Joomla "Special:MyLanguage/J3.x:Creating a Plugin for Joomla") sollte hilfreich sein.
 
-## Dateisystem-Plugin erstellen
+## Erstellen Sie Ihr Dateisystem-Plugin
 
 ### Konfiguration
 
-Als erstes muss ein **Dateisystem**-Plugin erstellt werden, das den
-Medien-Manager erweitert. Dieses Plugin sollte einige wichtige Attribute
-enthalten, damit es mit dem Medien-Manager zusammenarbeiten kann.
+Zuerst müssen wir ein **Filesystem**-Plugin erstellen, um den Medien-Manager zu erweitern. Dieses Plugin sollte einige wichtige Attribute enthalten, damit es mit dem Medien-Manager funktionieren kann.
 
-Das Plugin muss die Option `group="filesystem"` enthalten. In der Datei
-`[plugin-name].xml` sollte daher Folgendes enthalten sein:
+Stellen Sie sicher, dass Ihr Plugin `group="filesystem"` enthält. In Ihrer `[plugin-name].xml` sollten Sie Folgendes haben:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="4.0" type="plugin" group="filesystem" method="upgrade">
-	<name>plg_filesystem_myplugin</name>
-	<author>Joomla! Project</author>
-	<creationDate>April 2017</creationDate>
-	<copyright>Copyright (C) 2005 - 2017 Open Source Matters. All rights reserved.</copyright>
-	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
-	<authorEmail>admin@joomla.org</authorEmail>
-	<authorUrl>www.joomla.org</authorUrl>
-	<version>__DEPLOY_VERSION__</version>
-	<description>Description</description>
-	<files>
-		<filename plugin="myplugin">myplugin.php</filename>
-		<folder>SomeFolder</folder>
-	</files>
+    <name>plg_filesystem_myplugin</name>
+    <author>Joomla! Project</author>
+    <creationDate>April 2017</creationDate>
+    <copyright>Copyright (C) 2005 - 2017 Open Source Matters. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <authorEmail>admin@joomla.org</authorEmail>
+    <authorUrl>www.joomla.org</authorUrl>
+    <version>__DEPLOY_VERSION__</version>
+    <description>Description</description>
+    <files>
+        <filename plugin="myplugin">myplugin.php</filename>
+        <folder>SomeFolder</folder>
+    </files>
 
-	<config>
-		<fields name="params">
-			<fieldset name="basic">
-				<field
-					name="display_name"
-					type="text"
-					label="YOUR_LABEL"
-					description="YOUR_DESCRIPTION"
-					default="DEFAULT_VALUE"
-				/>
-			</fieldset>
-		</fields>
-	</config>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                    name="display_name"
+                    type="text"
+                    label="YOUR_LABEL"
+                    description="YOUR_DESCRIPTION"
+                    default="DEFAULT_VALUE"
+                />
+            </fieldset>
+        </fields>
+    </config>
 </extension>
 ```
 
-Der Parameter **display_name** hilft dem Medien-Manager, den Namen des
-**Dateisystems** als Root-Knoten im Datei-Browser anzuzeigen. Alle
-Adapter, die zum Dateisystem gehören, werden als untergeordnete Knoten
-unter der Wurzel angezeigt.
+Der **display_name**-Parameter hilft dem Medienmanager, den Namen Ihres **Dateisystems** als Wurzelknoten im Dateibrowser anzuzeigen. Jeder Adapter, der zu Ihrem Dateisystem gehört, wird als untergeordneter Knoten unterhalb der Wurzel angezeigt.
 
-Eventuell benötigte Parameter wie `App Secret` mit den passenden
-Formularfeldern einbinden.
+Bitte verwenden Sie alle erforderlichen Parameter, die Sie benötigen, wie zum Beispiel `App Secret` mit geeigneten Formulareingabefeldern.
 
-### Plugin-Events
+### Plugin-Ereignisse
 
 - `onFileSystemGetAdapters()`
-- `onFileSystemOAuthCallback(\Joomla\Component\Media\Administrator\Event\OAuthCallbackEvent $event)`
+- `onFileSystemOAuthCallback(\Joomla\Component\Media\Administrator\Event\OAuthCallbackEvent $Ereignis)`
 
 #### onFileSystemGetAdapters()
 
-**Jedes** Dateisystem-Plugin sollte ein Event mit dem Namen
-`onFileSystemGetAdapters()` für die Funktionalität enthalten. Dieses
-Event sollte ein **Array** von
-`Joomla\Component\Media\Administrator\Adapter\AdapterInterface`
-zurückgeben, wenn es aufgerufen wird. Das Event wird ausgelöst, wenn der
-Medien-Manager geöffnet wird. Jedes `AdapterInterface` wird unter dem
-Root-Knoten des Dateisystems eingehängt.
+**Jedes** Filesystem-Plugin sollte ein Ereignis namens `onFileSystemGetAdapters()` für die Funktionalität enthalten. Dieses Ereignis sollte ein **Array** von `Joomla\Component\Media\Administrator\Adapter\AdapterInterface` zurückgeben, wenn es aufgerufen wird. Das Ereignis wird ausgelöst, wenn Sie den Medienmanager öffnen. Jedes `AdapterInterface` wird unter dem Stammknoten Ihres Dateisystems eingehängt.
 
 #### onFileSystemOAuthCallback()
 
-Dieses Event wird ausgelöst, wenn der **OAuthCallbackHandler** des
-Medien-Managers für den unten im Dokument beschriebenen
-OAuth2.0-Autorisierungs- und Authentifizierungsprozess verwendet wird.
-Das Event wird nur auf das angeforderte Plugin übertragen. Es ist in
-einem typischen Szenario also nicht nötig, nach `$context` zu suchen.
+Dieses Ereignis wird ausgelöst, wenn Sie den **OAuthCallbackHandler** des Media Managers für den im Dokument unten beschriebenen OAuth2.0-Autorisierungs- und Authentifizierungsprozess verwendet haben. Das Ereignis wird nur beim angeforderten Plugin ausgelöst. Es ist daher nicht notwendig, in einem typischen Szenario auf `$context` zu prüfen.
 
-Ein Anwendungsbeispiel für das Event sieht so aus:
+Ein Beispiel für die Verwendung des Ereignisses sieht folgendermaßen aus:
 
 ```php
     public function onFileSystemOAuthCallback(\Joomla\Component\Media\Administrator\Event\OAuthCallbackEvent $event)
@@ -125,34 +97,28 @@ Ein Anwendungsbeispiel für das Event sieht so aus:
     }
 ```
 
-**OAuthCallbackEvent** enthält die an den Medien-Manager
-OAuthCallback-URI weitergeleitete Eingabe. `$event->getInput()` gibt ein
-Input-Objekt zurück.
+**OAuthCallbackEvent** enthält die an den Media Manager OAuthCallback-URI weitergeleiteten Eingaben. `$event->getInput()` gibt ein Input-Objekt zurück.
 
-`$result` definiert, wie sich Joomla nach einer Weiterleitung zum
-Callback verhält. Es stehen mehrere Lösungsmöglichkeiten zur Verfügung:
+`$result` definiert, wie Joomla nach einer Weiterleitung zur Rückrufaktion verhalten soll. Es gibt mehrere mögliche Lösungen:
 
-- `action`
-  - close: Schließt ein Fenster, das durch ein JavaScript **mittels
-    window.open()** geöffnet wurde
-  - redirect: Umleitung auf die in der **redirect_uri** angegebene Seite
-  - control-panel: Umleitung zum Kontrollpanel
-  - media-manager: Umleitung zum Medien-Manager
+- `aktion`
+  - schließen: Schließt ein Fenster, das von einem JavaScript geöffnet wurde **mithilfe von window.open()**
+  - weiterleiten: Leitet zur Seite um, die durch die **redirect_uri** angegeben ist
+  - kontroll-panel: Weiterleitung zum Kontrollpanel
+  - medien-manager: Weiterleitung zum Medienmanager
 - `redirect_uri`
-  - Verwendung mit der Aktion **redirect** (erforderlich)
-- `message`
+  - Wird mit **weiterleiten** Aktion verwendet (erforderlich)
+- `nachricht`
   - Nachricht muss nach einer Aktion angezeigt werden
-- `message_type`
-  - Warnung
-  - Hinweis
-  - Fehler
-  - Nachricht (oder leer lassen)
+- `nachricht_typ`
+  - warnung
+  - hinweis
+  - fehler
+  - nachricht (oder leer lassen)
 
-Nachdem alles gesetzt wurde, das Argument `$result` von `$event`
-verwenden, um es an den Aufrufenden zurückzugeben.
+Nachdem Sie alles eingestellt haben, setzen Sie das `$result`-Argument des `$event`, um es wieder an den Aufrufer zurückzugeben.
 
-Eine Nachricht an den Benutzer könnte beispielsweise folgendermaßen
-aussehen:
+Ein Beispiel, um eine Nachricht an den Benutzer anzuzeigen, wäre:
 
 ```php
     $result = [
@@ -162,74 +128,44 @@ aussehen:
     ];
 ```
 
-Diese leitet auf den Medien-Manager um und gibt eine Meldung mit dem
-Text in **message** aus.
+Dadurch wird auf den Media Manager umgeleitet und eine Benachrichtigung mit dem Text im **Nachricht** angezeigt.
 
-Diese Methode kann typischerweise dazu verwendet werden, um
-Autorisierungscodes für den **OAuth2.0**-Prozess zu erhalten. Im Falle
-eines **Fehlers** greift Joomla! auf das Kontrollzentrum zurück und
-zeigt eine Fehlermeldung an.
+Diese Methode kann typischerweise verwendet werden, um Berechtigungscodes für den **OAuth2.0**-Prozess zu erhalten. Im Falle eines **Fehlers** wird Joomla! auf das Kontrollpanel zurückfallen und eine Fehlermeldung anzeigen.
 
 ## Authentifizierung und Autorisierung
 
-Joomla! 4.x empfiehlt, OAuth2.0 für diesen Prozess zu verwenden. Es ist
-ein häufiges Szenario, dass OAuth2.0 eine **redirect url** benötigt, um
-Authentifizierungsdaten an die Anwendung zu übergeben. Dies wird
-typischerweise durch einen Callback-Handler erledigt. Für das Plugin
-muss das Rad nicht neu erfunden werden. Der **Callback Handler** des
-**Medien-Managers** kann diese Aufgabe übernehmen.
+Joomla! 4.x rät Ihnen, OAuth2.0 für diesen Prozess zu verwenden. Es ist ein häufiges Szenario, dass OAuth2.0 eine **Umleitungs-URL** benötigt, um Authentifizierungsdaten an die Anwendung weiterzugeben. Dies wird typischerweise von einem Rückruf-Handler erledigt. Für Ihr Plugin müssen Sie das Rad nicht neu erfinden, Sie können den **Callback-Handler** des **Medienmanagers** verwenden, um die Aufgabe zu erfüllen.
 
-All you have to do is to set the **Redirect URI** to following in your
-OAuth2.0 Provide and Implement the
-`onFileSystemOAuthCallback(\Joomla\Component\Media\Administrator\Event\OAuthCallbackEvent $event)`
-in your plugin.
+Alles, was Sie tun müssen, ist, die **Redirect URI** im OAuth2.0-Anbieter auf Folgendes festzulegen und die `onFileSystemOAuthCallback(\Joomla\Component\Media\Administrator\Event\OAuthCallbackEvent $event)` in Ihrem Plugin zu implementieren.
 
 `[site-name]/administrator/index.php?option=com_media&task=plugin.oauthcallback&plugin=[your-plugin-name]`
 
-In this example:
+In diesem Beispiel:  
 `[site-name]/administrator/index.php?option=com_media&task=plugin.oauthcallback&plugin=myplugin`
 
-Now when you do a redirect from your provider once it reaches the URL
-provided, the **Controller** for Media Manager will ensure that your
-plugin implements
-`onFileSystemOAuthCallback(\Joomla\Component\Media\Administrator\Event\OAuthCallbackEvent $event)`
-before passing any data to it. If not, you will be redirected to the
-Control Panel with an error message.
+Nun, wenn Ihr Anbieter eine Weiterleitung durchführt, sobald die bereitgestellte URL erreicht wird, stellt der **Controller** für den Medien-Manager sicher, dass Ihr Plugin `onFileSystemOAuthCallback(\Joomla\Component\Media\Administrator\Event\OAuthCallbackEvent $event)` implementiert, bevor irgendwelche Daten übergeben werden. Andernfalls werden Sie mit einer Fehlermeldung zum Control Panel weitergeleitet.
 
-If you have implemented all the inputs that are passed with, the Cloud
-Provider will be included in the `$event`. You can access them using
-`$event->getInput()` and treat it as an usual `input` to Joomla.
+Wenn Sie alle übergebenen Eingaben implementiert haben, wird der Cloud-Anbieter in das `$event` einbezogen. Sie können darauf mit `$event->getInput()` zugreifen und es wie eine übliche `input` in Joomla behandeln.
 
-After you received the `input`, you can use it to obtain the details of
-your cloud service such as **Access Token**, **Refresh Token** etc.
+Nachdem Sie das `input` erhalten haben, können Sie es verwenden, um die Details Ihres Cloud-Dienstes wie **Access Token**, **Refresh Token** usw. zu erhalten.
 
-If you want to distinguish multiple accounts, you can use `Session` for
-that.
+Wenn Sie mehrere Konten unterscheiden möchten, können Sie dafür `Session` verwenden.
 
-**Note**: It is advised to check against **CSRF token** before you
-proceed your request. Most cloud providers support `state` parameter
-that can be used to fulfill the task.
+**Hinweis**: Es wird empfohlen, vor dem Fortsetzen Ihrer Anfrage den **CSRF-Token** zu überprüfen. Die meisten Cloud-Anbieter unterstützen den `state`-Parameter, der zur Erfüllung der Aufgabe verwendet werden kann.
 
-### Common Pitfalls
+### Häufige Fallen
 
-It is required to `urlencode()` your redirect uri when you're sending it
-to the cloud provider. Please use it to avoid misbehaviours of your
-cloud.
+Es ist erforderlich, Ihre Redirect-URI zu `urlencode()`, wenn Sie diese an den Cloud-Anbieter senden. Bitte verwenden Sie es, um Fehlverhalten Ihrer Cloud zu vermeiden.
 
-## File Serve from your Adapter
+## Datei-Serve von Ihrem Adapter
 
-To serve your media files from the Media Manager to **Joomla! Site**
-`Joomla\Component\Media\Administrator\Adapter\AdapterInterface` helps
-you. This Interface contains a special method called `getUrl($path)`.
+Um Ihre Mediendateien vom Medienmanager an die **Joomla! Seite** auszuliefern, hilft Ihnen `Joomla\Component\Media\Administrator\Adapter\AdapterInterface`. Diese Schnittstelle enthält eine spezielle Methode namens `getUrl($path)`.
 
-`$path : Path is relative to your root`
+`$path : Der Pfad ist relativ zu Ihrem Root-Verzeichnis`
 
-The intention of the method is to provide a **Public Absolute URL** for
-the file you requested to insert in the site. For example assume your
-file path is `/path/to/me.png` in the cloud server. Now a public URL
-might be something like `mycloud.com/share/u/myusername/path/to/me.png`.
-How it is being served, is completely up to you. When an user wants to
-insert a media generated URL, this method will be used.
+Die Absicht der Methode besteht darin, eine **öffentliche absolute URL** für die Datei bereitzustellen, die Sie auf der Website einfügen möchten. Angenommen, Ihr Dateipfad lautet `/path/to/me.png` auf dem Cloud-Server. Eine öffentliche URL könnte dann etwa so aussehen: `mycloud.com/share/u/myusername/path/to/me.png`. Wie diese bereitgestellt wird, liegt ganz bei Ihnen. Wenn ein Benutzer eine durch einen Mediengenerator erstellte URL einfügen möchte, wird diese Methode verwendet.
 
-More details about `Adapter Interface` can be found in
-`administrator/componenents/com_media/Adapter/AdapterInterface.php`
+Weitere Einzelheiten zur `Adapter-Schnittstelle` finden Sie in `administrator/componenents/com_media/Adapter/AdapterInterface.php`.
+
+*Übersetzt von openai.com*
+
