@@ -23,7 +23,9 @@ $date = Date::getInstance(); // Alias of 'new Date();'
 
 Es gibt keinen Unterschied zwischen diesen Methoden, da Date::getInstance einfach eine neue Instanz von Date genau wie die erste gezeigte Methode erstellt.
 
-Alternativ können Sie auch das aktuelle Datum (als Date-Objekt) vom Application-Objekt abrufen, indem Sie verwenden:```php
+Alternativ können Sie auch das aktuelle Datum (als Date-Objekt) vom Application-Objekt abrufen, indem Sie verwenden:
+
+```php
 use Joomla\CMS\Factory;
 
 $date = Factory::getDate();

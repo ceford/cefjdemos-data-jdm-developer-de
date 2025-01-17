@@ -101,7 +101,8 @@ Ihre Kopie des joomla-cms-Codes benötigt weitere Schritte, um als Website verwe
 
 - Öffnen Sie ein Terminal und wechseln Sie in den Ordner, der Ihren geklonten Code enthält.
 - Führen Sie composer install aus:
-  - Linux- und OSX-Nutzer können den folgenden Bash-Alias einrichten, indem sie das Folgende in die ~/.bash_profile oder ~/.zsh-Datei einfügen (\$ source ~/.bash_profile, um es sofort zu aktivieren):```sh
+  - Linux- und OSX-Nutzer können den folgenden Bash-Alias einrichten, indem sie das Folgende in die `~/.bash_profile` oder `~/.zsh` einfügen (`\$ source ~/.bash_profile`, um es sofort zu aktivieren):
+```sh
     alias jclean="rm -rf administrator/templates/atum/css; \
     rm -rf templates/cassiopeia/css; \
     rm -rf administrator/templates/system/css; \
@@ -113,7 +114,6 @@ Ihre Kopie des joomla-cms-Codes benötigt weitere Schritte, um als Website verwe
     rm -rf installation/template/css"
     alias jinstall="jclean; composer install --ignore-platform-reqs; npm ci"
 ```
-
 - Composer ist nicht in meinem Pfad, also habe ich php ~/composer/composer.phar ersetzt.
 - jinstall
 - das alle Joomla PHP-Abhängigkeiten, Javascript-Abhängigkeiten abruft, alle ES6-Javascript kompiliert und die Dateien an den entsprechenden Orten ablegt.
