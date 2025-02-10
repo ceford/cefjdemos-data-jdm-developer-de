@@ -389,7 +389,7 @@ Einklappen wird in Joomla häufig verwendet, und Sie müssen möglicherweise kei
 
 Ergebnis:
 
-![Bootstrap collaps](../../../en/images/coding-examples/coding-examples-collapse.png)
+![Bootstrap collapse](../../../en/images/coding-examples/coding-examples-collapse.png)
 
 ### Beispiel 5: Dropdown
 
@@ -586,7 +586,7 @@ Ergebnis:
 
 Die Schritte umfassen:
 
-- Laden Sie dieses Plugin herunter, installieren und aktivieren Sie es: [](https://github.com/ceford/j4xdemos-plg-bscompos/raw/master/plg_j4xdemos_bscompos.zip)
+- Laden Sie dieses Plugin herunter, installieren und aktivieren [Sie es](https://github.com/ceford/j4xdemos-plg-bscompos/raw/master/plg_j4xdemos_bscompos.zip)
 - Fügen Sie im Beitrag den Text hinzu, auf den das Plugin reagiert, zum Beispiel {bscompos modal carousel}, was das Laden des notwendigen JavaScripts zum Unterstützen eines modalen Dialogs und eines Karussells auslösen wird. Das Plugin entfernt den auslösenden Text und die umgebenden (jetzt) leeren Tags.
 - Fügen Sie den HTML-Code der Bootstrap-Komponente direkt im Beitrag oder in einem im Beitrag enthaltenen Modul ein. Unten finden Sie Beispiel-HTML-Code für ein einfaches Modal und ein Modal, das ein Karussell enthält. Beachten Sie, dass dies nicht funktioniert, wenn sich der HTML-Code in einem Modul in einer Template-Position befindet.
 - Dies funktioniert auch für ein Standard-Custom-Modul, wenn die Option "Inhalt vorbereiten" auf Ja gesetzt ist.
