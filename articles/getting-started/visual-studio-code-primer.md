@@ -281,6 +281,6 @@ Kuchentage?
 
 ## Literaturverzeichnis
 
-Aus der Joomla! Dokumentation: [Visual Studio Code](https://docs.joomla.org/Visual_Studio_Code "Visual Studio Code"), das auch die Konfiguration anderer Werkzeuge abdeckt, zum Beispiel CodeSniffer und PHPUnit.
+Aus der Joomla! Dokumentation: [Visual Studio Code](https://docs.joomla.org/Visual_Studio_Code), das auch die Konfiguration anderer Werkzeuge abdeckt, zum Beispiel CodeSniffer und PHPUnit.
 
 *Übersetzt von openai.com*

@@ -14,7 +14,7 @@ Joomla!  4.x
 
 **Joomla! 4.x** wird standardmäßig mit Cloud-Dateisystemen für den **Medien-Manager** geliefert. Mit der vorherigen API war das Erstellen benutzerdefinierter Dateisysteme eine schwierige Aufgabe. Dank der neuen API ist es nun einfach, ein benutzerdefiniertes Dateisystem zu erstellen. Wenn Sie einen Cloud-Dienst mit dem neuen Medien-Manager verwenden möchten, wird die Verwendung von **OAuth2.0** empfohlen.
 
-Dieses Dokument führt Sie durch wichtige Schritte zur Erstellung Ihres eigenen **Dateisystem-Plugins**, um den **Media-Manager** zu erweitern. Bevor Sie fortfahren, stellen Sie bitte sicher, dass Sie über grundlegende Kenntnisse zur Entwicklung eines Plugins für Joomla verfügen. [Dieses Tutorial](https://docs.joomla.org/J3.x:Creating_a_Plugin_for_Joomla "Special:MyLanguage/J3.x:Creating a Plugin for Joomla") sollte hilfreich sein.
+Dieses Dokument führt Sie durch wichtige Schritte zur Erstellung Ihres eigenen **Dateisystem-Plugins**, um den **Media-Manager** zu erweitern. Bevor Sie fortfahren, stellen Sie bitte sicher, dass Sie über grundlegende Kenntnisse zur Entwicklung eines Plugins für Joomla verfügen. [Dieses Tutorial](https://docs.joomla.org/J3.x:Creating_a_Plugin_for_Joomla) sollte hilfreich sein.
 
 ## Erstellen Sie Ihr Dateisystem-Plugin
 
