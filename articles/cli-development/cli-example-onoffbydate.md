@@ -6,7 +6,7 @@ Es gibt Gelegenheiten, bei denen eine Website ein Modul je nach Datum anzeigen o
 
 Der Code ist verfügbar auf [GitHub](https://github.com/ceford/cefjdemos-plg-onoffbydate).
 
-Es gibt weitere Beiträge zur Nutzung der CLI im [Benutzerhandbuch](http://localhost/jdm4/jdocmanual?article=user/command-line-interface/using-the-cli) und in der Joomla! Programmierer-Dokumentation [lokale Kopie](jdocmanual?article=docus/plugins/plugin-examples-console-plugin-sqlfile) oder [Originalquelle](https://manual.joomla.org/docs/building-extensions/plugins/plugin-examples/console-plugin-sqlfile/);
+Es gibt weitere Beiträge zur Nutzung der CLI im [Benutzerhandbuch](jdocmanual?article=user/command-line-interface/using-the-cli) und in der Joomla! Programmierer-Dokumentation [lokale Kopie](jdocmanual?article=docus/plugins/plugin-examples-console-plugin-sqlfile) oder [Originalquelle](https://manual.joomla.org/docs/building-extensions/plugins/plugin-examples/console-plugin-sqlfile/);
 
 ## Joomla-Standards
 
