@@ -25,17 +25,15 @@ Die Daten basieren auf ISO 3166-Ländercodes, aber einige sehr bekannte Länder 
 
 Die Dateien für die com_countrybase-Komponente sind auf GitHub verfügbar. Sie können eine [ZIP](https://github.com/ceford/j4xdemos-com-countrybase/archive/refs/heads/master.zip)-Datei herunterladen und installieren, um zu sehen, wie sie im Administrator-Menü funktioniert. Erstellen Sie einen Menüpunkt, wenn Sie sehen möchten, wie es in Ihrem Site-Template funktioniert. Entpacken Sie die ZIP-Datei in Ihrem Projektdateiverzeichnis, nicht in Ihrem Test-Webseitbaum, um die Komponenten-Dateistruktur und den Dateiinhalt mit Ihrem bevorzugten IDE- oder Textbearbeitungswerkzeug zu untersuchen.
 
-## Screenshot
+## Screenshots
 
 Diese Administratorliste der Länder enthält fünf Beiträge, um die Bildgröße zu minimieren. Joomla zeigt normalerweise 20 Beiträge an.
 
-![Liste der Länder](../../../en/images/mvc-anatomy/com-countrybase-countries.png)
+![Liste der Länder](../../../en/images/mvc-anatomy/mvc-anatomy-getting-started/01-admin-list-of-countries.png)
 
-## Boilerplate-Komponente
+The site display has been set to 5 items also:
 
-Um Ihnen den Einstieg mit Ihrer eigenen Komponente zu erleichtern, steht eine [Beispielkomponente](https://github.com/ceford/j4xdemos-com-bpsrc/archive/refs/heads/master.zip) auf Github zur Verfügung. Laden Sie diese herunter und entpacken Sie sie in Ihrem Projektdateienbereich, nicht im Verzeichnisbaum Ihrer Test-Website. Nach dem Herunterladen nehmen Sie alle Änderungen vor, die in der README angegeben sind, und schon können Sie loslegen.
-
-Es gibt auch eine Reihe von kostenlosen und kommerziellen Erweiterungsgeneratoren, die Sie ausprobieren können, um ein Skelettkomponente für Ihre eigenen Zwecke zu generieren. Der [Joomla! Component Builder](https://www.joomlacomponentbuilder.com/) ist kostenlos und scheint umfassend zu sein.
+![List of countries in site view](../../../en/images/mvc-anatomy/mvc-anatomy-getting-started/02-site-list-of-countries.png)
 
 *Übersetzt von openai.com*
 

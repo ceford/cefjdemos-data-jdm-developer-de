@@ -31,7 +31,7 @@ cefjdemos-plg-finder-jdocmanual
 
 In VSCodium sieht es so aus:
 
-![Plugin-Entwicklungs-Dateistruktur in vscodium](../../../en/images/plugins/jdocmanual-vscodium.png)
+![Plugin-Entwicklungs-Dateistruktur in vscodium](../../../en/images/plugin-development/smart-search/01-files-in-vscodium.png)
 
 ## Den Code anpassen
 
@@ -132,7 +132,7 @@ Aus dem **Inhalt / Website-Module** wählen Sie **Neu** und installieren Sie ein
 
 Letztendlich sollte Ihr benutzerdefiniertes Smart-Suche-Plugin funktionieren. Dies ist eine Beispiel-Ergebnisseite für Jdocmanual, die nach einem Begriff auf dieser Seite sucht. Die Ergebnisseite lässt das Suchformular in der Titelleiste aus, da es im Seiteninhalt vorhanden ist.
 
-![Intelligentes Suchergebnis](../../../en/images/plugins/jdocmanual-search-result.png)
+![Intelligentes Suchergebnis](../../../en/images/plugin-development/smart-search/02-smart-search-result.png)
 
 Ein Hinweis: Das System - Joomla Accessibility Checker-Plugin zeigt, dass es 3 Fehler im Zusammenhang mit dem *Suchbegriffe* Dateneingabeformular gibt. Das benötigt eine Kernkorrektur oder ein Override.
 

@@ -227,7 +227,7 @@ HTMLHelper::_('behavior.keepalive');
 
 Du kannst durch Formular-Feldgruppen und Felder innerhalb jeder Feldgruppe wechseln. Das kann die Ausgabe von komplexen Formularen mit vielen Tabs vereinfachen.
 
-![Land Bearbeitungsformular](../../../en/images/mvc-anatomy/com-countrybase-edit-country.png)
+![Land Bearbeitungsformular](../../../en/images/mvc-anatomy/mvc-anatomy-administrator-edit-files/01-country-edit-form.png)
 
 *Übersetzt von openai.com*
 

@@ -38,7 +38,7 @@ cefjdemos-plg-toc
 
 Dies ist die Struktur, wie sie in der VSCode- oder VSCodium-IDE zu sehen ist:
 
-![Plugin-Entwicklungsdateistruktur in vscodium](../../../en/images/plugins/cefjdemostoc-vscodium.png)
+![Plugin-Entwicklungsdateistruktur in vscodium](../../../en/images/plugin-development/content-toc/01-file-structure-in-vscodium.png)
 
 ## Die Manifestdatei
 
@@ -238,7 +238,7 @@ Der obige `default.php` Code zeigt, wie man ein benutzerdefiniertes Stylesheet f
 
 ## Ergebnis
 
-![Das resultierende Inhaltsverzeichnis](../../../en/images/plugins/cefjdemostoc-result.png)
+![Das resultierende Inhaltsverzeichnis](../../../en/images/plugin-development/content-toc/02-result-table-of-contents.png)
 
 *Übersetzt von openai.com*
 

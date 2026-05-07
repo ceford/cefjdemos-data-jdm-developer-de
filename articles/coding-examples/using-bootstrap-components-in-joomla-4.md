@@ -293,7 +293,7 @@ Benachrichtigungen können im HTML-Code ohne JavaScript-Unterstützung verwendet
 
 Beispielergebnis der Einbindung eines Moduls in einem Beitrag:
 
-![Bootstrap-Warnung](../../../en/images/coding-examples/coding-examples-alert.png)
+![Bootstrap-Warnung](../../../en/images/coding-examples/bootstrap-components/01-bootstrap-alert.png)
 
 Beachten Sie, dass ohne JavaScript-Unterstützung der Alarm genau wie oben erscheint, jedoch ein Klick auf die Schließen-Schaltfläche \[X\] den Alarm nicht schließt. Der Alarm wird auch bei jedem Seitenladen angezeigt.
 
@@ -321,7 +321,7 @@ Mit diesem Stil in der Vorlage user.css:
     }
 ```
 
-![Bootstrap-Schaltflächen](../../../en/images/coding-examples/coding-examples-buttons.png)
+![Bootstrap-Schaltflächen](../../../en/images/coding-examples/bootstrap-components/02-bootstrap-buttons.png)
 
 Die Schaltflächen wechseln zwischen Blau und Grün.
 
@@ -367,7 +367,7 @@ Der Carousel bietet eine Diashow, die eine Reihe von Bildern oder Textfenstern d
 
 Ergebnis:
 
-![Bootstrap-Karussell](../../../en/images/coding-examples/coding-examples-carousel.jpg)
+![Bootstrap-Karussell](../../../en/images/coding-examples/bootstrap-components/03-bootstrap-carousel.jpg)
 
 ### Beispiel 4: Einklappen
 
@@ -389,7 +389,7 @@ Einklappen wird in Joomla häufig verwendet, und Sie müssen möglicherweise kei
 
 Ergebnis:
 
-![Bootstrap collapse](../../../en/images/coding-examples/coding-examples-collapse.png)
+![Bootstrap collapse](../../../en/images/coding-examples/bootstrap-components/04-bootstrap-collapse.png)
 
 ### Beispiel 5: Dropdown
 
@@ -410,7 +410,7 @@ Dropdowns sind umschaltbare, kontextbezogene Overlays zur Anzeige von Listen mit
 
 Ergebnis:
 
-![Bootstrap-Dropdown](../../../en/images/coding-examples/coding-examples-dropdown.png)
+![Bootstrap-Dropdown](../../../en/images/coding-examples/bootstrap-components/05-bootstrap-dropdown.png)
 
 ### Beispiel 6: Modal
 
@@ -439,7 +439,7 @@ Der Modal-Komponente öffnet ein Dialogfeld in der Mitte des Bildschirms. Es gib
 
 Ergebnis:
 
-![Bootstrap-Modul](../../../en/images/coding-examples/coding-examples-modal.png)
+![Bootstrap-Modul](../../../en/images/coding-examples/bootstrap-components/06-bootstrap-modal.png)
 
 ### Beispiel 7: Offcanvas
 
@@ -455,7 +455,7 @@ Popovers sind wie Tooltips, aber mit einem Titel. Sie haben einige Zugänglichke
 
 Ergebnis:
 
-![Bootstrap-Warnung](../../../en/images/coding-examples/coding-examples-popover.png)
+![Bootstrap-Warnung](../../../en/images/coding-examples/bootstrap-components/08-bootstrap-popover.png)
 
 ### Beispiel 9: Scrollspy
 
@@ -502,7 +502,7 @@ Beispielcode:
 
 Ergebnis:
 
-![Bootstrap scrollspy](../../../en/images/coding-examples/coding-examples-scrollspy.png)
+![Bootstrap scrollspy](../../../en/images/coding-examples/bootstrap-components/09-bootstrap-scrollspy.png)
 
 Bitte übersetzen Sie den folgenden Markdown-Text aus dem Englischen ins Deutsche und verwenden Sie dabei das Wort Beiträge anstelle von Artikeln.
 Auch ist etwas Styling in user.css erforderlich:
@@ -539,7 +539,7 @@ Tabs werden oft als Navigationselemente in Kombination mit Dropdowns verwendet. 
 
 Ergebnis:
 
-![Bootstrap-Tab](../../../en/images/coding-examples/coding-examples-tab.png)
+![Bootstrap-Tab](../../../en/images/coding-examples/bootstrap-components/10-bootstrap-tab.png)
 
 Denken Sie daran, sowohl die Tab- als auch die Dropdown-Optionen zu überprüfen, damit der Dropdown-Teil funktioniert.
 
@@ -560,7 +560,7 @@ Toasts sind leichte Benachrichtigungen, die entwickelt wurden, um die Push-Benac
 
 Ergebnis:
 
-![Bootstrap-Toast](../../../en/images/coding-examples/coding-examples-toast.png)
+![Bootstrap-Toast](../../../en/images/coding-examples/bootstrap-components/11-bootstrap-toast.png)
 
 Beachten Sie, dass die Bootstrap-Demo, die einen Button verwendet, um die Toast-Nachricht anzuzeigen, zusätzliches JavaScript benötigt. Es scheint, dass dieser Bestandteil einen Programmierer benötigt, um ihn gut zu nutzen!
 
@@ -580,7 +580,7 @@ Ein Tooltip ist ein kleines Stück Text, das beim Überfahren eines Buttons oder
 
 Ergebnis:
 
-![Bootstrap Tooltip](../../../en/images/coding-examples/coding-examples-tooltip.png)
+![Bootstrap Tooltip](../../../en/images/coding-examples/bootstrap-components/12-bootstrap-tooltip.png)
 
 ## Ansatz 2: Verwendung eines Inhalts-Plugins
 
@@ -712,7 +712,7 @@ Dieser Code sucht nach Klassennamen, die in mod_custom festgelegt sind, und füh
 - Erstellen Sie ein Menüelement für einen einzelnen Beitrag.
 - Testen Sie es:
 
-![Bootstrap-Modul-Modul in Beiträge](../../../en/images/coding-examples/coding-examples-modal-module.png)
+![Bootstrap-Modul-Modul in Beiträge](../../../en/images/coding-examples/bootstrap-components/13-bootstrap-modal-module-in-article.png)
 
 ### Eine Modalkomponente mit einem Karussell
 
@@ -782,6 +782,6 @@ Dieser Code sucht nach Klassennamen, die in mod_custom festgelegt sind, und füh
 - Erstellen Sie einen neuen Menüpunkt für einen einzelnen Beitrag: Demo Modal Carousel
 - Testen Sie es:
 
-![Bootstrap Modal-Karussell](../../../en/images/coding-examples/coding-examples-modal-carousel.png)
+![Bootstrap Modal-Karussell](../../../en/images/coding-examples/bootstrap-components/14-bootstrap-modal-carousel.png)
 
 *Übersetzt von openai.com*

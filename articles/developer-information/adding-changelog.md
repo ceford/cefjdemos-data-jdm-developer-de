@@ -4,7 +4,7 @@ Seit Joomla 4.0 können Erweiterungsentwickler die Fähigkeit von Joomla nutzen,
 
 Die Änderungen in einem Release werden in dieser Weise präsentiert:
 
-![changelog modal view](../../../en/images/developer-information/adding-changelog-example-1.png)
+![changelog modal view](../../../en/images/developer-information/adding-changelog/01-changelog-modal-view.png)
 
 Das Änderungsprotokoll wird an zwei verschiedenen Orten verwendet.
 
@@ -12,7 +12,7 @@ Das Änderungsprotokoll wird an zwei verschiedenen Orten verwendet.
 
 Der Installationsprogramm zeigt das Änderungsprotokoll der Version an, die installiert werden kann, falls verfügbar.
 
-![changelog installer view](../../../en/images/developer-information/adding-changelog-update-view.png)
+![changelog installer view](../../../en/images/developer-information/adding-changelog/02-changelog-installer-view.png)
 
 Durch Klicken auf die Schaltfläche Changelog wird das Änderungsprotokoll der neuen verfügbaren Version angezeigt.
 
@@ -20,7 +20,7 @@ Durch Klicken auf die Schaltfläche Changelog wird das Änderungsprotokoll der n
 
 Der Erweiterungsmanager zeigt das Änderungsprotokoll der derzeit installierten Erweiterung an, falls verfügbar.
 
-![changelog installer view](../../../en/images/developer-information/adding-changelog-extension-view.png)
+![changelog extension view](../../../en/images/developer-information/adding-changelog/03-changelog-extension-view.png)
 
 Durch Klicken auf die Versionsnummer hier wird das Änderungsprotokoll der aktuell installierten Version angezeigt.
 
