@@ -1,4 +1,11 @@
-<!-- Filename: Visual_Studio_Code_Primer / Display title: Visual Studio Code -->
+<!--
+{
+  "source": "https://docs.joomla.org/Visual_Studio_Code_Primer",
+  "title": "Visual Studio Code ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## VS Code - Eine beliebte kostenlose IDE
 
@@ -105,7 +112,7 @@ In der globalen Konfiguration von Joomla setzen Sie *Debug-System* auf *Ja* und 
 
 Wenn Sie eine Seite mit dem fehlerhaften Modul öffnen, sehen Sie eine Stapelverfolgung, die Ihnen zeigt, wo ein Fehler ausgelöst wurde.
 
-![Stack-Trace](../../../en/images/getting-started/vscode-primer-stack-trace.png)
+![Stack-Trace](../../../../en/images/getting-started/ides/visual-studio-code-primer/01-stack-trace.png)
 
 Manchmal befindet sich der Programmierfehler in der ersten Zeile der Stacktrace. Andernfalls, wenn der Fehler im Bibliothekscode ausgelöst wird, zum Beispiel durch das Übergeben ungültiger Daten an eine Datenbankfunktion, kann der Programmierfehler weiter unten in der Liste der Funktionsaufrufe liegen.
 
@@ -113,7 +120,7 @@ Manchmal befindet sich der Programmierfehler in der ersten Zeile der Stacktrace.
 
 In VS Code verwenden Sie den Menüpunkt Datei / Ordner öffnen, um den Ordner zu finden und zu öffnen, der Ihre lokale Kopie des *mod_debugme*-Erweiterungscodes enthält. Sie sollten etwas Ähnliches wie das Folgende sehen:
 
-![VS Code Bildschirm](../../../en/images/getting-started/vscode-primer-screen.png)
+![VS Code Bildschirm](../../../../en/images/getting-started/ides/visual-studio-code-primer/02-vscode-screen.png)
 
 Möglicherweise können Sie das Problem alleine durch Lesen des Codes diagnostizieren. Im Fall des Fehlers *Klasse "DebugHelper" nicht gefunden* werden Sie sehen, dass eine *use*-Anweisung ein paar Zeilen weiter oben auskommentiert wurde. Das Vergessen, eine *use*-Anweisung einzufügen, ist ein häufiger Fehler während der anfänglichen Entwicklung!
 
@@ -275,7 +282,7 @@ Einige weniger offensichtliche Probleme:
 
 Wenn alles behoben ist, sehen Sie möglicherweise Folgendes:
 
-![Seitenansicht des funktionierenden, debugged Moduls](../../../en/images/getting-started/vscode-primer-debugme-fixed.png)
+![Seitenansicht des funktionierenden, debugged Moduls](../../../../en/images/getting-started/ides/visual-studio-code-primer/03-debugme-fixed.png)
 
 Kuchentage?
 

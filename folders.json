@@ -1,0 +1,19 @@
+{
+    "advanced-administrator" : "Erweiterter Administrator",
+    "api-guides" : "API-Anleitungen",
+    "cli-development" : "CLI-Entwicklung",
+    "coding-examples" : "Codierungsbeispiele",
+    "core-contributions" : "Kernbeiträge",
+    "database" : "Datenbank",
+    "developer-information" : "Entwicklerinformationen",
+    "developing-an-mvc-component" : "Entwicklung einer MVC-Komponente",
+    "getting-started" : "Einstieg",
+    "ides" : "IDEs",
+    "module-development" : "Modulentwicklung",
+    "mvc-anatomy" : "MVC-Anatomie",
+    "mvc-examples" : "MVC-Beispiele",
+    "plugin-development" : "Plugin-Entwicklung",
+    "security" : "Sicherheit",
+    "testing" : "Testen",
+    "tips" : "Tips"
+}

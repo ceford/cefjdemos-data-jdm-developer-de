@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Tips_and_Tricks_for_Joomla_4_Developers / Display title: Tipps und Tricks für Joomla 4 Entwickler -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Tips_and_Tricks_for_Joomla_4_Developers",
+  "title": "Tipps und Tricks für Joomla 4 Entwickler ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 Diese Beitragsreihe soll neuen Entwicklern mit Codebeispielen helfen, die entwickelt und verwendet wurden, um spezifische Probleme zu lösen. Sie beinhalten typischerweise eine Mischung aus PHP, JavaScript, XML und manchmal anderen Formaten.
 

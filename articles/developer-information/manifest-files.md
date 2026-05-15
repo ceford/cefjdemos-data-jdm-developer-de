@@ -1,4 +1,11 @@
-<!-- Filename: Manifest_files / Display title: Manifestdateien -->
+<!--
+{
+  "source": "https://docs.joomla.org/Manifest_files",
+  "title": "Manifestdateien ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Einführung
 

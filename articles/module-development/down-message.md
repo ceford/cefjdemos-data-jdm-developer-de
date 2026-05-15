@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:J4_Module_example_-_Mydownmsg / Display title: Beispiel: Nachricht bei Website-Ausfall -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:J4_Module_example_-_Mydownmsg",
+  "title": "Beispiel: Nachricht bei Website-Ausfall ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Einführung
 
@@ -51,7 +58,7 @@ cefjdemos-plg-toc
 
 Dies ist die Struktur, wie sie in der VSCode oder VSCodium IDE zu sehen ist:
 
-![Plugin-Entwicklungs-Dateistruktur in vscodium](../../../en/images/modules/downmsg-module-vscodium.png)
+![Plugin-Entwicklungs-Dateistruktur in vscodium](../../../en/images/module-development/down-message//01-files-in-vscodium.png)
 
 ## Die Manifestdatei
 
@@ -362,13 +369,13 @@ In der gemeinsamen Parameterliste auf der rechten Seite
 4. Wählen Sie im Tab **Menüzuweisung** die Option **Auf allen Seiten**.
 5. **Speichern** und Sie sind bereit, das Erscheinungsbild der Seite zu überprüfen.
 
-![das Modulbearbeitungsformular](../../../en/images/modules/downmsg-module-edit-form.png)
+![das Modulbearbeitungsformular](../../../en/images/module-development/down-message/02-module-edit-form.png)
 
 ## Testen
 
 So erscheint die Nachricht auf Englisch:
 
-![Website nicht erreichbar Nachricht auf Deutsch](../../../en/images/modules/downmsg-module-result-de.png)
+![Website nicht erreichbar Nachricht auf Deutsch](../../../en/images/module-development/down-message/03-module-result-en.png)
 
 In Deutsch:
 
@@ -388,11 +395,11 @@ Programmieren ist der Prozess des Entwerfens und Erstellens von Anweisungen, die
 
 Im nächsten Beitrag werden wir die grundlegende Syntax von Python untersuchen und unser erstes Programm schreiben. Bleiben Sie dran!
 
-![Seite ausgefallen Nachricht auf Englisch](../../../en/images/modules/downmsg-module-result-de.png)
+![Seite ausgefallen Nachricht auf Englisch](../../../en/images/module-development/down-message/04-module-result-de.png)
 
 Und Französisch:
 
-![Seite nicht verfügbar Nachricht auf Deutsch](../../../en/images/modules/downmsg-module-result-fr.png)
+![Seite nicht verfügbar Nachricht auf Deutsch](../../../en/images/module-development/down-message/05-module-result-fr.png)
 
 ## Website aktualisieren und Änderungsprotokoll
 

@@ -1,4 +1,11 @@
-<!-- Filename: API_Guides / Display title: API-Anleitungen -->
+<!--
+{
+  "source": "https://docs.joomla.org/API_Guides",
+  "title": "API-Anleitungen ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 Diese Seite enthält ein Verzeichnis der Joomla API-Anleitungen. Diese Leitfäden sollen Ihnen helfen, zu verstehen, wie Sie diese Joomla-Funktionen in Ihren eigenen Joomla-Erweiterungen nutzen können.
 

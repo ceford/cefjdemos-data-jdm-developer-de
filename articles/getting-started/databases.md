@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Developer:_Required_Software / Display title: Einrichtung der Datenbank -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Developer:_Required_Software",
+  "title": "Einrichtung der Datenbank ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Über MySQL und MariaDB
 
@@ -6,7 +13,7 @@ Neulinge könnten den Eindruck haben, dass MySQL und MariaDB Datenbanken sind un
 
 Der folgende Screenshot zeigt einen Teil einer Liste von über 30 Datenbanken, die für das Testen verschiedener Joomla-Installationen und -Erweiterungsprojekte erstellt wurden.
 
-![Phypadmin-Screenshot der Liste der Datenbanken](../../../en/images/getting-started/phpmyadmin-databases.png)
+![Phypadmin-Screenshot der Liste der Datenbanken](../../../en/images/getting-started/databases/01-phpmyadmin-list-of-databases.png)
 
 Ein Hinweis am Rande: die Kollationen sind meist utf8mb4_0900_ai_ci:
 

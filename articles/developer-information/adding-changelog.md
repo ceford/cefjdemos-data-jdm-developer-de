@@ -1,4 +1,11 @@
-<!-- Filename: Adding_changelog_to_your_manifest_file / Display title: Hinzufügen eines Änderungsprotokolls -->
+<!--
+{
+  "source": "https://docs.joomla.org/Adding_changelog_to_your_manifest_file",
+  "title": "Hinzufügen eines Änderungsprotokolls ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 Seit Joomla 4.0 können Erweiterungsentwickler die Fähigkeit von Joomla nutzen, eine Änderungsdatei zu lesen und eine visuelle Darstellung der Änderungen zu geben. Wenn eine bestimmte Version nicht in der Änderungsdatei gefunden wird, wird der Änderungsprotokoll-Button nicht angezeigt.
 

@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:MVC_Anatomy:_Administrator_Edit_Files / Display title: MVC Anatomie: Administrator Beiträge bearbeiten Dateien -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:MVC_Anatomy:_Administrator_Edit_Files",
+  "title": "MVC Anatomie: Administrator Beiträge bearbeiten Dateien ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Länderdaten-Dateien
 

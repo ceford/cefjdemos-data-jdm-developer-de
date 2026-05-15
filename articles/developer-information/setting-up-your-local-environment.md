@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Setting_Up_Your_Local_Environment / Display title: Einrichten einer lokalen Umgebung -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Setting_Up_Your_Local_Environment",
+  "title": "Einrichten einer lokalen Umgebung ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Schnellanleitung
 

@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Joomla_Core_APIs / Display title: Joomla Kern-APIs -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Joomla_Core_APIs",
+  "title": "Joomla Kern-APIs ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 Diese Seite listet die in Joomla verfügbaren Endpunkte anhand von curl-Befehlen auf. Sie wurde für Joomla 4 erstellt und erfordert eine Überprüfung auf Konformität mit den aktuellen Joomla-Versionen.
 

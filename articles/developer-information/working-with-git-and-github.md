@@ -1,4 +1,11 @@
-<!-- Filename: Working_with_git_and_github / Display title: Arbeiten mit Git und GitHub -->
+<!--
+{
+  "source": "https://docs.joomla.org/Working_with_git_and_github",
+  "title": "Arbeiten mit Git und GitHub ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Einführung
 
@@ -48,7 +55,7 @@ Auf GitHub kannst du Projekte in sogenannten Repositories finden. Innerhalb eine
 
 Auf Ihrem Testcomputer werden Sie den **4.2-dev**-Branch verwenden. Sie können diesen Branch jedoch nicht ändern, da Sie nicht der Besitzer sind. Sie müssen eine Kopie davon erstellen. Auf GitHub wird dies als Fork bezeichnet. Sie sind der Besitzer dieser Kopie, sodass Sie sie ändern können. Nach der Änderung Ihres Forks können Sie eine Pull-Anfrage für die von Ihnen vorgenommenen Änderungen stellen. Mehr dazu später. Sie können einen Branch forken, indem Sie die Schaltfläche Fork im [Joomla! CMS Github Repository](https://github.com/joomla/joomla-cms) drücken. Diese Schaltfläche befindet sich oben rechts auf der Seite.
 
-![Gabel joomla in github](../../../en/images/getting-started/working-with-git-and-github/01-fork-joomla-in-github.png)
+![Gabel joomla in github](../../../en/images/developer-information/working-with-git-and-github/01-fork-joomla-in-github.png)
 
 Nach dem Forken müssen Sie Joomla! auf Ihrem lokalen Computer installieren. Gehen Sie zu dem Ordner, in dem Sie Dateien platzieren können, die von Ihrem Webserver verwendet werden. Viele Programme verwenden einen Ordner namens `htdocs`. Einige verwenden `www` und andere verwenden ganz andere Ordner. Es hängt alles davon ab, ob Sie Windows, Mac oder Linux verwenden. Schließlich wird Ihr Web-Root verschiedene Ordner für verschiedene Websites enthalten. Sobald Sie sich in Ihrem Web-Root-Ordner befinden, verwenden Sie entweder in einem offenen Terminalfenster den Befehl cd, um das aktuelle Verzeichnis auf das Web-Root zu ändern. Oder, in Ihrem Dateiexplorer-GUI, finden Sie den Web-Root-Ordner, drücken Sie die rechte Maustaste und klicken Sie auf: „Git Bash Here“ oder „Terminal öffnen“ oder etwas Ähnliches.
 

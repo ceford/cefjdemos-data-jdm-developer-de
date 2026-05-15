@@ -1,4 +1,11 @@
-<!-- Filename: Setting_up_Eclipse_PDT_2020_and_Git_for_Pulls / Display title: Einrichten von Eclipse PDT 2020 und Git für Pull-Anfragen -->
+<!--
+{
+  "source": "https://docs.joomla.org/Setting_up_Eclipse_PDT_2020_and_Git_for_Pulls",
+  "title": "Einrichten von Eclipse PDT 2020 und Git für Pull-Anfragen ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Einführung
 
@@ -42,7 +49,7 @@ Lassen Sie uns annehmen, dass Sie alles außer Eclipse installiert haben.
 
 Es gibt einen Workflow, der in [Mein erster Pull-Request zu Joomla! auf Github](https://docs.joomla.org/My_first_pull_request_to_Joomla!_on_Github) beschrieben ist, den ich nicht genug loben kann. Er zeigt genau, was Sie tun müssen:
 
-![Github-Arbeitsablauf](../../../en/images/getting-started/core-work-flow-joomla.png)
+![Github-Arbeitsablauf](../../../en/images/getting-started/setting-up-eclipse/01-github-work-flow.png)
 
 Schritte
 

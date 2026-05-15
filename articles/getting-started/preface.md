@@ -1,4 +1,11 @@
-<!-- Filename: Vorwort / Display title: Vorwort -->
+<!--
+{
+  "source": "https://docs.joomla.org/Vorwort",
+  "title": "Vorwort ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Über dieses Handbuch
 
